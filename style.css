@@ -1,0 +1,747 @@
+
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 4rem;
+    background-color: #EB2B2B;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 1.5em;
+}
+
+ul,li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+ul li:hover{
+    transform: scale(1.2,1.2);
+    color: black;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.logo{
+    width: 10%;
+    height: 150%;
+    cursor: pointer;
+    margin-right: 1.1em;
+}
+
+
+
+.logo:hover{
+    transform: rotate(360deg) scale(1.1,1.1);
+    transition: 1s transform;
+}
+
+.logoJS:hover{
+    transform: rotate(360deg) scale(1.1,1.1);
+    transition: 1s transform;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media screen and (max-width: 1000px){
+
+    nav{
+        flex-direction: column;
+    }
+    ul{
+        justify-content: flex-start;
+    }
+
+.logo{
+    width: 15%;
+    height: 2.5em;
+    position: absolute;
+    z-index: 1;
+    align-self: center;
+}
+
+    #search{
+    position: absolute;
+    top: 0.8em;
+    color: white;
+    z-index: 1;
+    align-self: flex-end;
+    padding-right: 0.7em;
+}
+.hamburger{
+    display: flex;
+    justify-content: center;    
+    position: absolute;
+    top: 0.5em;
+    width: 14%;
+    border: none;
+    background-color:  #EB2B2B;
+    font-size: 1.5em;
+    z-index: 1;
+}
+.hamb{
+    display: none;
+}
+
+.last{
+    padding-bottom: 0.5em;
+}
+
+.searchClick{
+    display: flex;
+    padding-left: 0;
+    width: 100%;
+    position: absolute;
+    top: 2.6em;
+    font-style: italic;
+    animation: none !important;
+    padding: 1em 1em  !important;
+    z-index: 1;
+}
+
+.startType{
+    margin: 0.5em;}
+
+}
+
+
+.corona{
+    display: flex;
+    background-color:  #EB2B2B;
+    z-index: 0;
+    width: 100%;
+    padding-left: 0.5em;
+}
+
+
+
+.input{
+    display: none;
+}
+
+.searchClick{
+    display: flex;
+    padding-left: 20rem;
+    animation-name: inputPadding;
+    animation-duration: 1s;
+    font-size: 1em;
+    border: #EB2B2B 3px solid;
+    font-style: italic;
+}
+
+@keyframes inputPadding{
+
+from{
+    padding-left: 0;
+}
+to{
+    padding-left: 20rem;
+}
+}
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+}
+
+.searchSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: url("https://cdn.wallpapersafari.com/52/50/jynW2C.jpg");
+    background-size: cover;
+    background-position:bottom;
+    display: none;
+    height: 40vh;
+    animation-name: padding-top;
+    animation-duration: 0.5s;
+    padding: 3em 0;
+    padding-top: 6em;
+}
+
+
+
+@keyframes padding-top{
+    from{
+        height: 0;
+    }
+    to{
+        height: 40vh;
+    }
+}
+
+
+
+.imgClass{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 100%;
+    width: 100%;
+    padding: 0.5em;
+}
+
+.h4Pokemon{
+    font-style: italic;
+    font-family: cursive;
+    color: white;
+    text-shadow: 1px 2px black;
+}
+
+.pKanto{
+    font-style: italic;
+    font-family: cursive;
+    font-size: 0.7rem;
+    color: rgb(240, 231, 231);
+}
+
+
+/* table */
+
+.startType {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+.typeOf{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border: none;
+    color: white;
+    border-radius: 100%;
+    padding: 1em 1em;
+    margin-left: 1em;
+    text-transform: capitalize;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.typeOfArticle{
+    display:flex;
+    flex-direction: column;
+    margin-left: 2em;
+}
+
+
+.weaknessArticle{
+    display: block;
+}
+
+.weaknessElements{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: white;
+    border-radius: 1em;
+    font-family: system-ui;
+    text-transform: capitalize;
+}
+
+.h4Weakness{
+    color: white;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    font-family: system-ui;
+    text-shadow: 1px 1px black;
+}
+
+.h4strong{
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    font-family: system-ui;
+    padding-top: 1em;
+    text-shadow: 1px 1px black;
+}
+
+.aboutPoke{
+    display: flex;
+    flex-direction: column;
+    margin: 6rem;
+    padding: 1.5rem;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    width: 25%;
+}
+
+
+.strongAndWeak{
+    display:flex;
+    flex-direction: column;
+}
+
+
+
+@media (max-width: 1000px){
+
+    .first{
+    padding-top: 13rem;
+    animation-name: hambPadding;
+    animation-duration: 0.5s;
+}
+
+@keyframes hambPadding{
+    from{
+        padding-top: 7rem;
+    }
+    to{
+        padding-top: 13rem;
+    }
+}
+
+    .searchSection{
+        display: flex;
+        flex-direction: column;
+        width: initial;
+        animation-name: fade;
+        animation-duration: 0.4s;
+        height: auto;
+        padding-top: 6em;
+        padding-bottom: 3em;
+        padding-left: 2em;
+        padding-right: 2em;
+        display: none;
+    }
+    @keyframes fade{
+        from{
+            padding-top:0;
+        }
+        to{
+            padding-top: 6em;
+        }
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .typeOf{
+        padding: 0.5em;
+    }
+
+    .typeOfArticle{
+        display:flex;
+        flex-direction: row;
+        margin: 1.5em 0;
+    }
+    .aboutPoke{
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    border: none;
+    width: 100%;
+    }
+    .aboutPoke h3{
+        margin-bottom: 0;
+    }
+    .weaknessArticle{
+        display:flex;
+        flex-direction: column;
+    }
+}
+
+
+.jumbotron{
+
+    width: 100%;
+    height: 50vh;
+    background:url("https://media-s3-us-east-1.ceros.com/hype-beast/images/2018/07/13/a9a51bc0b8d626db493ab5f9a971b043/background-hero.png?imageOpt=1&fit=bounds&width=2163");
+    background-position: center;
+    background-size: cover;
+    margin-top: 4em;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.jumbotron h1{
+    margin: 0;
+    color: rgb(248, 248, 11);
+    text-shadow: 5px 5px rgb(32, 32, 143);
+    font-weight: 500;
+    font-family: 'Potta One', cursive;
+}
+
+.jumbotron p{
+    color: honeydew;
+    font-style: italic;
+    font-weight: 600;
+    text-shadow: 2px 2px black;
+    font-family: 'Nunito', sans-serif;
+}
+.teamRocket{
+    width: 8em;
+}
+
+
+.about{
+    flex-direction: column;
+    font-size: 1.3em;
+    width: 50%;
+}
+
+.pokemons{
+    width:12em;
+}
+
+.ashKetchum{
+    width:12em;
+}
+
+
+
+img{
+      -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+
+@media screen and (max-width: 1000px){
+    .jumbotron{
+        flex-direction: column;
+        height: auto;
+        padding-top: 4em;
+    }
+.jumbotron p {
+        padding: 0 1em;
+        padding-top: 1em;
+}
+    .jumbotron .about{
+        width: 100%;
+    }
+    .pokemons{
+        display:none;
+    }
+    .teamRocket{
+        display: none;
+    }
+}
+
+
+
+.jumboMargin{
+    margin-top: 0;
+}
+
+.buttonType{
+    border: none;
+    font-size: 1.6em;
+    color: white;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+.h1type{
+    width: 60%;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+    font-size: 1.5em;
+    align-items: center;
+    color: white;
+    font-family: "Nunito";
+}
+
+.normal{
+    display:flex;
+    flex-direction: column;
+}
+
+.articleContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokeName{
+    display: flex;
+    font-size: 0.8em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-family: "Nunito";
+}
+
+
+object{
+    display: none;
+}
+
+.aside{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: center;
+}
+
+.allIcons{
+    padding-top: 1em;
+    width: 40%;
+}
+
+@media screen and (max-width: 600px){
+    .aside{
+        width: 36%;
+    }
+    .h1type{
+        width: -webkit-fill-available;
+    }
+    .allIcons{
+        width: -webkit-fill-available;
+    }
+}
+
+
+
+
+
+.imgClassTypes{
+    background-color: rgb(224, 207, 207);
+    border-radius: 100%;
+    width: 60%;
+    padding: 1em;
+}
+
+
+.h1OfType{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+    color:darkslategray;
+    font-family: "Nunito";
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: black;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* LOCATIONS */
+
+.locations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.locationArticle{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.h4Location{
+   font-size: 2em;
+    text-transform: capitalize;
+    text-align: center;
+    color: white;
+    font-family: "Nunito";
+    margin-bottom: 0;
+}
+
+
+
+.pokeLocations{
+    display: none;
+}
+    /* animation-name: locationFade;
+    animation-duration: 1s;
+    padding-top: 5rem;
+
+
+
+@keyframes locationFade {
+
+    from{
+        padding-top: 0;
+    }
+    to{
+        padding-top: 5em;
+    }
+} */
+
+.buttonX{
+    font-size: 1.1em;
+    display: contents;
+    color: white;
+}
+
+.display{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.margin-far {
+    margin: 1em 0;
+}
+
+
+.displayPikaPika{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+.pokeNameLocation {
+    display: flex;
+    font-size: 0.8em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-family: "Nunito";
+}
+
+
+
+
+/* footer */
+
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Nunito";
+    padding: 2em 0;
+    margin-top: 2em;
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px){
+footer{
+    padding: 3em 0;
+    font-size: 0.8em;
+    margin-bottom: 0;
+}
+}
+
+@media screen and (max-width: 599px){
+footer{
+    font-size: 0.7em;
+    margin-bottom: 0;
+    padding: 0;
+    height: 25vh;
+
+}
+footer p:nth-of-type(1){
+    margin-top: 0;
+}
+}
+
+
+.networks{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+    border-bottom: 1px solid silver;
+}
+
+.networks p {
+    margin-top: 0;
+}
+
+
+.snetworks{
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+}
+
+
+.snetworks a:hover{
+    color: red;
+}

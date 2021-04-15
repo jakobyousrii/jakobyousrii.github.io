@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Pikadex</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Potta+One&family=Nunito:ital,wght@0,400;0,600;0,700;1,300;1,400;1,600&display=swap&Open+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button class="hamburger"> <i class="fas fa-bars"></i></button>
+            <ul class="hamb last">
+                <li><a href="#footer"><i class=" far fa-address-card"></i>About</a></li>
+
+            </ul>
+            <ul class="hamb last">
+                <li><a href="https://www.pokemon.com/us/pokemon-episodes/" target="_blank"><i
+                            class="fas fa-tv"></i>Seasons</a></li>
+            </ul>
+
+            <img class="logo" src="https://pngimg.com/uploads/pokeball/pokeball_PNG21.png" alt="">
+
+            <ul class="hamb last">
+                <li><a class="typeA" href="#type"> <i class="fas fa-sign-in-alt"></i>Types</a>
+                </li>
+            </ul>
+            <input class="input" type="search" placeholder="search for a Pokemon...">
+            <ul id="search">
+                <li><a href="#searchHref"><i class="fas fa-search"></i> Search</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="searchSection" id="searchHref">
+        </section>
+        <section class="jumbotron">
+            <img class="teamRocket" src="https://i.pinimg.com/originals/bf/42/f8/bf42f8d554fb80e2a245568ee1412037.png"
+                alt="">
+            <div class="about">
+                <h1>WELCOME TO PIKADEX!</h1>
+                <p>Search for any Pokemon and find useful information, ects. which Pokemon type is weaker or stronger
+                    against other types...
+                </p>
+            </div>
+            <div class="pokemoni">
+                <img class="pokemons"
+                    src="https://cdn.bulbagarden.net/upload/thumb/7/7a/017Pidgeotto.png/250px-017Pidgeotto.png" alt="">
+                <img class="pokemons"
+                    src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/78c484d8-34a9-40ec-aa54-50ae46cf3855/dbky1p4-211230df-8ff6-497f-a592-46444a8a7aa9.png/v1/fill/w_900,h_645,strp/pokemon_generation_1__kanto_starter__remake__by_gts257_ct_dbky1p4-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD02NDUiLCJwYXRoIjoiXC9mXC83OGM0ODRkOC0zNGE5LTQwZWMtYWE1NC01MGFlNDZjZjM4NTVcL2Ria3kxcDQtMjExMjMwZGYtOGZmNi00OTdmLWE1OTItNDY0NDRhOGE3YWE5LnBuZyIsIndpZHRoIjoiPD05MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.38cWT_ynGoERyqUiomhgHp3nLGg7PUO6BxHv0CZlo0I"
+                    alt="">
+            </div>
+            <img class="ashKetchum" src="https://upload.wikimedia.org/wikipedia/sh/c/cc/Ash_and_Pikachu_OS.png" alt="">
+        </section>
+
+        <section class="normal" id="type">
+            <h1 class="h1OfType"> All Pokemon by type <img class="allIcons"
+                    src="https://www.nicepng.com/png/full/62-622961_no-one-knows-if-people-eat-pokmon-png.png" alt="">
+            </h1>
+        </section>
+
+        <section class="locations">
+
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <p>All design © Jakob Yousri, 2021.</p>
+
+        <section class="networks">
+            <p>Social networks:</p>
+            <div class="snetworks">
+                <a href="https://hr.linkedin.com/in/jakobyousri" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/jakob.yousri" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/jakobyousri/?hl=en" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+        <p> Pokémon content, images & names © Pokeapi.co </p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
