@@ -190,7 +190,6 @@ const weak = (dbldmge, colortype, article) => {
 
 //Adding pokemon types into all sections
 
-const buttonType = document.querySelector(".buttonType");
 const typeSection = document.querySelector(".normal");
 
 const typeOfPoke = async () => {
