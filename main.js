@@ -11,7 +11,7 @@ hamburger.addEventListener("click", () => {
 
     for (let i = 0; i < showLi.length; i++) {
         showLi[0].classList.toggle("first");
-        showLi[i].classList.toggle("corona");
+        showLi[i].classList.toggle("displayOnSmall");
     }
 });
 
