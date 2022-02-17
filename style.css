@@ -137,7 +137,7 @@ ul li:hover{
 }
 
 
-.corona{
+.displayOnSmallSize{
     display: flex;
     background-color:  #EB2B2B;
     z-index: 0;
